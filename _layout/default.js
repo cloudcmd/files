@@ -16,12 +16,12 @@
             });
       })();
   
-    var contactElement  = document.getElementById('js-contact'),
-        olarkLoad;
+    var isOlarkLoad,
+        contactElement  = document.getElementById('js-contact');
     
     contactElement.addEventListener('click', function(event) {
-        if (!olarkLoad) {
-            olarkLoad = true;
+        if (!isOlarkLoad) {
+            isOlarkLoad = true;
             loadOlark();
         }
         

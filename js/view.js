@@ -1,11 +1,8 @@
 (function() {
     'use strict';
     
-    window.addEventListener('load', function load() {
-        window.removeEventListener('load', load);
-        style();
-        fancy();
-    });
+    style();
+    fancy();
     
     function style() {
         var el = document.createElement('style');

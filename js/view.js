@@ -6,7 +6,17 @@
     
     function style() {
         var el = document.createElement('style');
+        
         el.innerHTML = selector() + '{ cursor: pointer }';
+        el.innerHTML += [
+            '.fancybox-title-float-wrap .child {',
+                '-webkit-border-radius: 0;,
+                '-moz-border-radius: 0;',
+                'border-radius: 0;',
+            '}'
+            ].join('');
+        });
+        
         document.head.appendChild(el);
     }
     

@@ -21,7 +21,12 @@
     
     function selector() {
         var dir = '/img/screen/';
-        return 'img[src^="' + dir + '"]';
+        var url = '//cloudcmd.io/img/screen/';
+        
+        return [
+            'img[src^="' + dir + '"]',
+            'img[src^="' + url + '"]'
+        ].join(',');
     }
     
     function fancy() {
